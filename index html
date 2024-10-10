@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Book Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Our Club</h2>
+        <p>We are a group of book enthusiasts who meet monthly to discuss a wide range of books. Join us for engaging conversations and discover your next favorite read!</p>
+    </section>
+
+    <section id="books">
+        <h2>Book List</h2>
+        <div class="book-list">
+            <div class="book">
+                <h3>The Great Gatsby</h3>
+                <p>by F. Scott Fitzgerald</p>
+                <p>A classic novel that explores themes of wealth, love, and the American Dream.</p>
+            </div>
+            <div class="book">
+                <h3>To Kill a Mockingbird</h3>
+                <p>by Harper Lee</p>
+                <p>A powerful story of racial injustice in the American South.</p>
+            </div>
+            <div class="book">
+                <h3>1984</h3>
+                <p>by George Orwell</p>
+                <p>A dystopian novel that delves into the dangers of totalitarianism and surveillance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@bookclub.com">info@bookclub.com</a></p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.book {
+    background-color: #fafafa;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 calc(33% - 2rem);
+    box-sizing: border-box;
+}
+
+.book h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
